@@ -9,10 +9,8 @@
 </head>
 <body>
 
-    <!-- Cabecera -->
     <header>
         <h1>Charly Yeison Suarez Quispe</h1>
-        <!-- Navegador -->
         <nav>
             <ul>
                 <li><a href="#sobre-mi">Sobre mí</a></li>
@@ -22,15 +20,13 @@
         </nav>
     </header>
 
-    <!-- Contenido principal -->
     <main>
         <section id="sobre-mi">
             <h2>Sobre mí</h2>
-            <p>¡Hola! Soy estudiante de Desarrollo Web Full Stack. Me apasiona la tecnología y estoy aprendiendo a construir sitios web dinámicos y atractivos.</p>
-            <p>Actualmente domino conceptos fundamentales de HTML5, CSS3 y buenas prácticas de maquetación semántica.</p>
+            <p>Hola Soy estudiante de Desarrollo Web Full Stack. Me apasiona la tecnología y estoy aprendiendo a construir sitios web dinámicos y atractivos.</p>
+            <p>Actualmente estoy aprendiendo  conceptos fundamentales de HTML5, CSS3.</p>
         </section>
 
-        <!-- Contenido complementario / Proyectos -->
         <section id="proyectos">
             <h2>Proyectos</h2>
             
@@ -46,7 +42,7 @@
         </section>
     </main>
 
-    <!-- Pie de página -->
+    
     <footer>
         <h2 id="contacto">Contacto</h2>
         <p>&copy; 2026 Tu Nombre - Todos los derechos reservados.</p>
@@ -71,6 +67,16 @@ alert("Esto aparece en la consola del navegador");
             document.getElementById("titulo").innerText = "¡Texto cambiado con DOM!";
         }
     </script>
+    <!-- Modal de bienvenida -->
+<div id="miModal" class="modal">
+    <div class="modal-contenido">
+        <span class="cerrar" onclick="cerrarModal()">&times;</span>
+        <h2>¡Bienvenido!</h2>
+        <p>Este es un mensaje importante que aparece al cargar la página.</p>
+        <button class="btn-entendido" onclick="cerrarModal()">Entendido</button>
+    </div>
+</div>
 </body>
 </body>
 </html>
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio - Desarrollo Web</title>
+    <link rel="stylesheet" href="estilo.css">
+    <!-- Carga del JS externo usando la buena práctica 'defer' -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Cabecera / Menú -->
+    <header>
+        <h1 id="titulo">Charly Yeison Suarez Quispe</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main>
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>Hola, bienvenido a mi sitio web. Aquí encontrarás información sobre mis proyectos y habilidades en desarrollo web.</p>
+            
+            <!-- Botones interactivos según la guía de JavaScript -->
+            <button onclick="cambiarTexto()">Cambiar Título (DOM)</button>
+            <button onclick="alert('Aviso con clic')">Haz clic aquí</button>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <article>
+                <h3>Proyecto 1</h3>
+                <p>Maquetación semántica en HTML5 y estilos interactivos.</p>
+            </article>
+            <article>
+                <h3>Proyecto 2</h3>
+                <p>Manipulación dinámica del DOM con JavaScript.</p>
+            </article>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Puedes contactarme a través de mis redes o correo electrónico.</p>
+        </section>
+    </main>
+
+    <!-- Pie de página con enlaces a las páginas secundarias -->
+    <footer>
+        <p>&copy; 2026 Tu Nombre - Desarrollo Web Full Stack</p>
+        <nav>
+            <a href="html5.html">HTML5</a> | 
+            <a href="css.html">CSS3</a>
+        </nav>
+    </footer>
+
+</body>
+</html>

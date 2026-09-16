@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio - Desarrollo Web</title>
+    <title>Mi Portafolio</title>
+    <!-- Enlace al archivo CSS externo -->
     <link rel="stylesheet" href="estilo.css">
-    <!-- Carga del JS externo usando la buena práctica 'defer' -->
-    <script src="script.js" defer></script>
 </head>
 <body>
 
-    <!-- Cabecera / Menú -->
+    <!-- Cabecera -->
     <header>
-        <h1 id="titulo">Charly Yeison Suarez Quispe</h1>
+        <h1>Charly Yeison Suarez Quispe</h1>
+        <!-- Navegador -->
         <nav>
             <ul>
                 <li><a href="#sobre-mi">Sobre mí</a></li>
@@ -22,43 +22,55 @@
         </nav>
     </header>
 
-    <!-- Contenido Principal -->
+    <!-- Contenido principal -->
     <main>
         <section id="sobre-mi">
             <h2>Sobre mí</h2>
-            <p>Hola, bienvenido a mi sitio web. Aquí encontrarás información sobre mis proyectos y habilidades en desarrollo web.</p>
-            
-            <!-- Botones interactivos según la guía de JavaScript -->
-            <button onclick="cambiarTexto()">Cambiar Título (DOM)</button>
-            <button onclick="alert('Aviso con clic')">Haz clic aquí</button>
+            <p>¡Hola! Soy estudiante de Desarrollo Web Full Stack. Me apasiona la tecnología y estoy aprendiendo a construir sitios web dinámicos y atractivos.</p>
+            <p>Actualmente domino conceptos fundamentales de HTML5, CSS3 y buenas prácticas de maquetación semántica.</p>
         </section>
 
+        <!-- Contenido complementario / Proyectos -->
         <section id="proyectos">
             <h2>Proyectos</h2>
+            
             <article>
                 <h3>Proyecto 1</h3>
-                <p>Maquetación semántica en HTML5 y estilos interactivos.</p>
+                <p>Descripción breve de tu primer proyecto o práctica del laboratorio.</p>
             </article>
+
             <article>
                 <h3>Proyecto 2</h3>
-                <p>Manipulación dinámica del DOM con JavaScript.</p>
+                <p>Descripción breve de otro ejercicio realizado en la universidad.</p>
             </article>
-        </section>
-
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Puedes contactarme a través de mis redes o correo electrónico.</p>
         </section>
     </main>
 
-    <!-- Pie de página con enlaces a las páginas secundarias -->
+    <!-- Pie de página -->
     <footer>
-        <p>&copy; 2026 Tu Nombre - Desarrollo Web Full Stack</p>
+        <h2 id="contacto">Contacto</h2>
+        <p>&copy; 2026 Tu Nombre - Todos los derechos reservados.</p>
         <nav>
             <a href="html5.html">HTML5</a> | 
-            <a href="css.html">CSS3</a>
+            <a href="css.html">CSS</a>
         </nav>
     </footer>
+<script>
+    console.log("Bienvenido a la página");
+alert("Esto aparece en la consola del navegador");
+</script>
+<h1>Pagina con js externo</h1>
+<button onclick="alert(`Aviso de clic`)">Haz clic aquí</button>
+<script src="script.js"></script>
+<body>
+    <h1 id="titulo">Hola</h1>
+    <button onclick="cambiarTexto()">Cambiar</button>
 
+    <script>
+        function cambiarTexto() {
+            document.getElementById("titulo").innerText = "¡Texto cambiado con DOM!";
+        }
+    </script>
+</body>
 </body>
 </html>

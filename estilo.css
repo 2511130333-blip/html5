@@ -41,7 +41,6 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Contenido Principal y Secciones */
 main {
     background: white;
     padding: 20px;
@@ -60,7 +59,6 @@ h2 {
     margin-bottom: 15px;
 }
 
-/* Artículos (Proyectos) */
 article {
     background: #e9ecef;
     padding: 15px;
@@ -69,7 +67,6 @@ article {
     border-radius: 4px;
 }
 
-/* Pie de página */
 footer {
     text-align: center;
     margin-top: 20px;
@@ -83,7 +80,6 @@ footer a {
     color: #61dafb;
     text-decoration: none;
 }
-/* Ventana Modal */
 .modal {
     display: none; /* Se oculta de inicio */
     position: fixed;
@@ -124,4 +120,24 @@ footer a {
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
+}
+footer .footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+footer .footer-nav a {
+    color: #00d8ff; /* El mismo color celeste de tu enlace CSS */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+footer .footer-nav a:hover {
+    color: #ffffff;
+    text-decoration: underline;
 }

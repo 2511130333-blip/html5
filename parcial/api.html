@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Contacto - EmailJS</title>
+  
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="api.css">
+
+  <!-- SDK de EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js">
+</script>
+  
+</head>
+<body>
+
+  <div class="card">
+    <h2>Formulario de Contacto</h2>
+    <p class="subtitle">Envíanos un mensaje y te responderemos pronto</p>
+
+    <!-- Contenedor para notificaciones de éxito o error -->
+    <div id="status-message" class="status-message"></div>
+
+    <form id="contact-form">
+      <div class="form-group">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="from_name" placeholder="Tu nombre" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="from_email" placeholder="correo@ejemplo.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="message" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+      </div>
+
+      <button type="submit" id="btn-submit">Enviar mensaje</button>
+    </form>
+  </div>
+
+  <!-- Lógica JavaScript -->
+  <script src="api.js"></script>
+</body>
+</html>

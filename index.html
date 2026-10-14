@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
+    <title>Mi Portafolio - Charly Yeison Suarez Quispe</title>
     <!-- Enlace al archivo CSS externo -->
     <link rel="stylesheet" href="estilo.css">
 </head>
@@ -23,8 +23,8 @@
     <main>
         <section id="sobre-mi">
             <h2>Sobre mí</h2>
-            <p>Hola Soy estudiante de Desarrollo Web Full Stack. Me apasiona la tecnología y estoy aprendiendo a construir sitios web dinámicos y atractivos.</p>
-            <p>Actualmente estoy aprendiendo  conceptos fundamentales de HTML5, CSS3.</p>
+            <p>Hola, soy estudiante de Desarrollo Web Full Stack. Me apasiona la tecnología y estoy aprendiendo a construir sitios web dinámicos y atractivos.</p>
+            <p>Actualmente estoy aprendiendo conceptos fundamentales de HTML5 y CSS3.</p>
         </section>
 
         <section id="proyectos">
@@ -40,43 +40,51 @@
                 <p>Implementación de sistemas de gestión de canchas deportivas</p>
             </article>
         </section>
+
+        <!-- Práctica con JS -->
+        <section>
+            <h2>Página con JS externo</h2>
+            <button onclick="alert('Aviso de clic')">Haz clic aquí</button>
+            <h3 id="titulo">Hola</h3>
+            <button onclick="cambiarTexto()">Cambiar</button>
+        </section>
     </main>
 
-    
+    <!-- PIE DE PÁGINA CON TODOS LOS ENLACES EN EL MISMO SITIO QUE EL CSS -->
     <footer>
         <h2 id="contacto">Contacto</h2>
-        <p>&copy; 2026 Tu Nombre - Todos los derechos reservados.</p>
-        <nav>
-            <a href="html5.html">HTML5</a> | 
+        <p>&copy; 2026 Charly Yeison Suarez Quispe - Todos los derechos reservados.</p>
+        <nav class="footer-nav">
+            <a href="html5.html">HTML5</a>
             <a href="css.html">CSS</a>
+            <a href="javaScripAsincrono.html">JS Asíncrono</a>
+            <a href="framework/index.html">Framework</a>
+            <a href="parcial/api.html">Parcial</a>
         </nav>
     </footer>
-<script>
-    console.log("Bienvenido a la página");
-alert("Esto aparece en la consola del navegador");
-</script>
-<h1>Pagina con js externo</h1>
-<button onclick="alert(`Aviso de clic`)">Haz clic aquí</button>
-<script src="script.js"></script>
-<body>
-    <h1 id="titulo">Hola</h1>
-    <button onclick="cambiarTexto()">Cambiar</button>
 
+    <!-- MODAL EMERGENTE -->
+    <div id="miModal" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal()">&times;</span>
+            <h2>¡Bienvenido!</h2>
+            <p>Este es un mensaje importante que aparece al cargar la página.</p>
+            <button class="btn-entendido" onclick="cerrarModal()">Entendido</button>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="script.js"></script>
     <script>
+        console.log("Bienvenido a la página");
+
         function cambiarTexto() {
             document.getElementById("titulo").innerText = "¡Texto cambiado con DOM!";
         }
+
+        function cerrarModal() {
+            document.getElementById("miModal").style.display = "none";
+        }
     </script>
-    <!-- Modal de bienvenida -->
-<div id="miModal" class="modal">
-    <div class="modal-contenido">
-        <span class="cerrar" onclick="cerrarModal()">&times;</span>
-        <h2>¡Bienvenido!</h2>
-        <p>Este es un mensaje importante que aparece al cargar la página.</p>
-        <button class="btn-entendido" onclick="cerrarModal()">Entendido</button>
-    </div>
-</div>
-</body>
 </body>
 </html>
-
